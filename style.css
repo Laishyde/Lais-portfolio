@@ -1,0 +1,329 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+background-image: url(./assets/bacground.png);
+color: #ffffff;
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    
+}
+main{
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+ 
+    font-size: 24px;
+}
+
+.container {
+    margin-top: 40px;
+  
+    display: grid;
+  gap: 20px;
+
+   
+    grid-template-columns: 200px 200px 1fr ;
+}
+
+.card {
+    --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+    width: 190px;
+    height: 254px;
+    padding: 5px;
+    border-radius: 1rem;
+    overflow: visible;
+    background: #f7ba2b;
+    background: var(--background);
+    position: relative;
+    z-index: 1;
+}
+
+.card::after {
+    position: absolute;
+    content: "";
+    top: 30px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    transform: scale(0.8);
+    filter: blur(25px);
+    background: #f7ba2b;
+    background: var(--background);
+    transition: opacity .5s;
+}
+
+.card-info {
+    --color: #ffff;
+    background: var(--color);
+    color: var(--color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+    border-radius: .7rem;
+}
+
+.card .title {
+    font-weight: bold;
+    letter-spacing: .1em;
+}
+
+/*Hover*/
+.card:hover::after {
+    opacity: 0;
+}
+
+.card:hover .card-info {
+    color: #f7ba2b;
+    transition: color 1s;
+}
+
+.one {
+    background-image: url(./assets/e3m3\ superação\ 2\ janeiro\ 2023.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.two {
+    background-image: url(./assets/e3m3\ superação\ janeiro\ 2023.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.tre {
+    background-image: url(./assets/superaçãomarço1.png);
+    background-position: center;
+    background-size: cover;
+}
+.for{
+    background-image: url(./assets/superaçãomarço2.png);
+        background-position: center;
+        background-size: cover;
+
+}
+.five{
+    background-image: url(./assets/2.png);
+        background-position: center;
+        background-size: cover;
+
+}
+.six{
+    background-image: url(./assets/dicae3m32023\ abril\ 3.png);
+        background-position: center;
+        background-size: cover;
+
+}
+.seven{
+    background-image: url(./assets/dicae3m32023\ abril\ 4.png);
+        background-position: center;
+        background-size: cover;
+
+}
+.eith{
+    background-image: url(./assets/template\ de\ dica\ e3m3\ dezembro\ 2.png);
+        background-position: center;
+        background-size: cover;
+
+}
+.nine{
+    background-image: url(./assets//templste\ dia\ numero\ 5\ x1.png);
+        background-position: center;
+        background-size: cover;
+
+}
+/* card2 */
+.card2 {
+    width: 250px;
+    height: 254px;
+
+    position: relative;
+    display: flex;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.card2 h2 {
+    z-index: 1;
+    color: white;
+    font-size: 2em;
+}
+
+.card2::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+  
+  
+}
+
+@keyframes rotBGimg {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.card2::after {
+    content: '';
+    position: absolute;
+  
+    inset: 5px;
+    border-radius: 15px;
+}
+.box{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+  
+  
+}
+.baby{
+    margin: 20px;
+}
+.post1{
+    background-image: url(./assets/1.png);
+        background-position: center;
+        background-size: cover;
+
+}
+.post2{
+    background-image: url(./assets/bebe.png);
+        background-position: center;
+        background-size: cover;
+
+}
+.post3{
+    background-image: url(./assets/flor\ 4.png);
+        background-position: center;
+        background-size: cover;
+
+}
+/* card3 */
+.card3 {
+    margin: 20px;
+    position: relative;
+    width: 380px;
+    height: 300px;
+    border-radius: 14px;
+    z-index: 1111;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+    ;
+}
+
+.bg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 380px;
+    height: 340px;
+    z-index: 2;
+    background: rgba(255, 255, 255, .95);
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid white;
+}
+
+.blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: #ff0000;
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+    0% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+
+    25% {
+        transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+    }
+
+    50% {
+        transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+    }
+
+    75% {
+        transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+    }
+
+    100% {
+        transform: translate(-100%, -100%) translate3d(0, 0, 0);
+    }
+}
+.content{
+    display: flex;
+    justify-content: center;
+}
+.circulo4{
+    background-image: url(./assets/florbaby-março2.png);
+        background-position: center;
+        background-size: cover;
+
+}
+.circulo2 {
+    background-image: url(./assets/post\ segundo\ bebe\ colorido\ foto\ 3.png);
+    background-position: center;
+    background-size: cover;
+
+}
+.circulo3 {
+    background-image: url(./assets/flor\ baby\ fevereiro\ 1.png);
+    background-position: center;
+    background-size: cover;
+
+}
+footer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: #2a035e;
+}
+.final{
+    width: 100%;
+    line-height: 32px;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+  
+  
+}
+p{
+    width: 800px;
+    margin: 20px;
+}
+footer h2{
+    font-size: 40px;
+}
