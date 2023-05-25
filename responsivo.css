@@ -41,5 +41,13 @@
         .card3{
             width: 300px;
         }
+        .btn{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .gif img{
+            width: 200px;
+        }
  
 }
