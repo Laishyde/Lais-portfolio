@@ -3,7 +3,7 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
-background-color: #000;
+background-image: url(./assets/bacground.png);
 color: #ffffff;
     
 }
