@@ -37,7 +37,7 @@ main{
 .card {
     --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
     width: 300px;
-    height: 254px;
+    height: 454px;
     padding: 5px;
     border-radius: 1rem;
     overflow: visible;
@@ -93,43 +93,43 @@ main{
 }
 
 .one {
-    background-image: url(./assets/e3m3\ superação\ 2\ janeiro\ 2023.png);
+    background-image: url(./assets/Sem\ Título-1.png);
     background-position: center;
     background-size: cover;
 }
 
 .two {
-    background-image: url(./assets/e3m3\ superação\ janeiro\ 2023.png);
+    background-image: url(./assets/wine.png);
     background-position: center;
     background-size: cover;
 }
 
 
 .tre {
-    background-image: url(./assets/superaçãomarço1.png);
+    background-image: url(./assets/art.png);
     background-position: center;
     background-size: cover;
 }
 .for{
-    background-image: url(./assets/superaçãomarço2.png);
+    background-image: url(./assets/mental2.png);
         background-position: center;
         background-size: cover;
 
 }
 .five{
-    background-image: url(./assets/2.png);
+    background-image: url(./assets/Imagem\ do\ WhatsApp\ de\ 2023-06-04\ à\(s\)\ 16.16.16.jpg);
         background-position: center;
         background-size: cover;
 
 }
 .six{
-    background-image: url(./assets/dicae3m32023\ abril\ 3.png);
+    background-image: url(./assets/e3m3\ superação\ 2\ janeiro\ 2023.png);
         background-position: center;
         background-size: cover;
 
 }
 .seven{
-    background-image: url(./assets/lalla.png);
+    background-image: url(./assets/mes\ de\ novembro\ e3\ numero\ 3\ -\ Copia.png);
         background-position: center;
         background-size: cover;
 
